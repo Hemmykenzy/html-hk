@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Customer Care Chatbot</title>
+    <link rel="stylesheet" href="chatstyle.css">
+    <link rel="stylesheet" href="chatstyle.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <center> <a href="jumia.html"> <img src="images/jm2.jpg" width="400" height="70" 
+        /></a><a href="cart.html"><img src="images/cart.jpg" width="30px" height="30px" 
+        align="right"/></a>
+        <img src="images/ws.jpg" width="30px" height="30px" align="right"/> 
+        <a href="Sign In.html"> <img src="images/pers.jpg" width="30px" height="30px" align="right"/> </a>
+        <img src="images/ws.jpg" width="30px" height="30px" align="right"/> 
+      
+
+     <a href="index.html"><img src="images/h2.jpg" width="30px"
+         height="30px" align="right"/></a>
+    </center> 
+    
+     
+     
+    
+      
+
+    <div class="sidebar collapsed">
+        <div class="tooltip">
+            <span class="tooltiptext">
+              Open Sidebar
+              </span>
+            <button id="sidebar-toggle">
+              <i class="fas fa-chevron-right"></i>
+              </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="conversation-list">
+                <div class="conversation">
+                    <p class="conversation-text">
+                      Last Conversation:
+                      </p>
+                    <p class="conversation-content">
+                      No conversation yet
+                      </p>
+                </div>
+            </div>
+            <button id="new-conversation-btn">
+              Start New Conversation
+              </button>
+        </div>
+    </div>
+    <div class="chat-container light-mode">
+        <div class="chat-content">
+            <div class="chat-header">
+                <div class="logo-container">
+                    <h1>Customer Care Chatbot&nbsp;
+                      <i class="fa fa-caret-down"></i>
+                      </h1>
+                </div>
+                <div class="mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox" 
+                               id="mode-toggle-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="chat-box" id="chat-box"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" 
+                       placeholder="Type your message...">
+                <button id="send-button">
+                  <b>&uarr;</b>
+                  </button>
+
+                
+                  
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

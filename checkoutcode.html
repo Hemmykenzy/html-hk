@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+
+    <!-- Cart items-->
+    <div id="cart items">
+        <h2>Cart items</h2>
+        <ul id="items-list">
+ <!--Cart items will be dynamically added here-->           
+        </ul>
+    </div>
+
+<!-- Checkout Button -->
+<button id="checkout-btn">Checkout</button>
+
+
+<script> 
+document.addEventListener("DOMContentLoaded", function() { 
+    const itemsList = document.getElementById("items-Iist"); 
+    const checkoutBtn = document.getElementById("checkout-btn");
+
+
+// Sample cart items (you can replace this with your own data) 
+const cartltems = [
+{ name: "Product 1", price: 20 },
+{ name: "Product 2", price: 30 },
+{ name: "Product 3", price: 25 }
+];
+
+
+// Function to render cart items 
+function renderCartItems() { 
+    itemsList.innerHTML ="";  
+    CartItems.forEach(item => { 
+        const li = document.createElement("li"); 
+        li.textContent = '${item.name}: $$
+{item.price}';
+itemsList.appendChild(li);
+    });
+}
+
+
+// Render initial cart items 
+renderCartItems();
+
+// Event listener for checkout button 
+
+checkoutBtn.addEventListener("cIick", function() {
+// Implement your checkout logic here
+
+ alert("Redirecting to checkout page...");
+});
+});
+
+</script>
+
+</body>
+</html>

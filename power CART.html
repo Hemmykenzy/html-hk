@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <style type="text/css">
+
+           
+body {
+            font-family: Arial, sans-serif;
+        }
+        .product {
+            margin: 10px 0;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+
+
+* {
+      box-sizing: border-box;
+      font-family: sans-serif;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: 305px 1fr;
+      gap: 10px;
+      margin: 0 auto;
+      padding: 10px;
+      max-width: 1400px;
+      min-height: 100vh;
+  }
+
+  aside,
+  main {
+      border: 1px solid grey;
+      padding: 20px;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      text-align: center;
+  }
+
+
+ 
+        </style>
+    </head>
+
+
+
+
+
+    <body>
+
+
+        <h1>Shopping Cart</h1>
+        <input type="text" id="search" placeholder="Search for products..." onkeyup="searchProducts()">
+        <div id="product-list"></div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <div id="cart"></div>
+
+       <img src="images/ws.jpg" width="30px" height="30px" align="right"/>
+        <a href="index.html"><img src="images/h2.jpg" width="30px"
+            height="30px" align="right"/></a>
+            <img src="images/ws.jpg" width="30px" height="30px" align="right"/>
+            <a href="Sign In.html"> <img src="images/pers.jpg" width="30px" height="30px" align="right"/> </a>
+        <img src="images/jm3.jpg" width="450" height="90" /><center> <h2>SHOPPING CART</h2></center>
+       <center> <h3>POWER</h3></center>
+      
+       
+       
+        <div class="container">
+            <aside>
+                <aside>
+                    <h2>Product Basket</h2>
+                    <ul id="cart"></ul>
+                    <div id="total">Total Amount: ₦0</div><br>
+                    <center><a href="CART.html? item1=ID1&quantity1=2&amount1=20&item2=ID2&quantity2=1&amount2=15">
+                        <button>Checkout</button></a></center>
+
+                </aside>
+            </aside>
+            <main>
+                <div class="cards">
+                    <div class="card" id="ite">
+                        <img src="power/1.jpg" width="200" height="200" >
+                        <h4>Recgargeable Fan Replacement Battery</h4>
+                        <p><mark></span>₦<span class="price">13999</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Cidea Android 12">
+                        <img src="power/2.jpg" width="200" height="200" alt="Cidea Android 12">
+                        <h4>Haeir Thermocool Electric Generator</h4>
+                        <p><mark></span>₦<span class="price">553440</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Apple IPhone XR" >
+                        <img src="power/3.jpg" width="200" height="200" alt="Apple IPhone XR">
+                        <h4>Manual Start Generator</h4>
+                        <p><mark></span>₦<span class="price">282000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Tecno Spark 20">
+                        <img src="power/4.jpg" width="200" height="200" alt="Tecno Spark 20"><br><p></p>
+                        <h4>Inverter</h4>
+                        <p><mark></span>₦<span class="price">120000</mark></p>
+                        <button>Add to cart</button><br><p></p>
+                    </div> 
+                    <div class="card" Cidea 8>
+                        <img src="power/5.jpg" width="200" height="200" >
+                        <h4>Solar Generator</h4>
+                        <p><mark></span>₦<span class="price">185999</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Cidea 8">
+                        <img src="power/6.jpg" width="200" height="200" a>
+                        <h4>Wave Inverter</h4>
+                        <p><mark></span>₦<span class="price">890000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="IPhone 6">
+                        <img src="power/7.jpg" width="200" height="200" >
+                        <h4>Inverter Solar Power</h4>
+                        <p><mark></span>₦<span class="price">227700</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Apple IPhone 11">
+                        <img src="power/8.jpg" width="200" height="200">
+                        <h4>Remote Control and Key Starter Generator</h4>
+                        <p><mark></span>₦<span class="price">390555</mark></p>
+                        <button>Add to cart</button><br><p></p>
+                    </div>
+                    <div class="card" id="Cidea C idea">
+                        <img src="power/9.jpg" width="200" height="200">
+                        <h4>Solar Inverter</h4>
+                        <p><mark></span>₦<span class="price">148000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Tecno Pop 8">
+                        <img src="power/10.jpg" width="200" height="200" >
+                        <h4>Itel Power Bank</h4>
+                        <p><mark></span>₦<span class="price">18990</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Apple Iphone 13 Pro Max">
+                        <img src="power/11.jpg" width="200" height="200" >
+                        <h4>Portable Power Bank</h4>
+                        <p><mark></span>₦<span class="price">6000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Cidea Adult 7">
+                        <img src="power/12.jpg" width="200" height="200" >
+                        <h4>Wireless Bluetooth Speaker</h4>
+                        <p><mark></span>₦<span class="price">31900</mark></p>
+                        <button>Add to cart</button><br><p></p>
+                    </div>
+                    <div class="card" id="Discover Note 9 Plus">
+                        <img src="power/13.jpg" width="200" height="200" >
+                        <h4>Hair Clipper</h4>
+                        <p><mark></span>₦<span class="price">16268</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Samsung Galaxy Z Fold">
+                        <img src="power/14.jpg" width="200" height="200" >
+                        <h4>Solar Lighting System</h4>
+                        <p><mark></span>₦<span class="price">35000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Itel It 5606">
+                        <img src="power/15.jpg" width="200" height="200" >
+                        <h4>Phone Holder with Power Bank, Bluetooth Speaker</h4>
+                        <p><mark></span>₦<span class="price">11500</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="XIAOMI Redmi Note 13">
+                        <img src="power/16.jpg" width="200" height="200" >
+                        <h4>ECOFLOW Support, Home Backup</h4>
+                        <p><mark></span>₦<span class="price">939999</mark></p>
+                        <button>Add to cart</button><br><p></p>
+                    </div>
+                    <div class="card" id="Samsung Galaxy Note 20">
+                        <img src="power/17.jpg" width="200" height="200" >
+                        <h4>Mini Speaker</h4>
+                        <p><mark></span>₦<span class="price">15000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Itel S24" >
+                        <img src="power/18.jpg" width="200" height="200" >
+                        <h4>Duravolt Mono Solar Panel</h4>
+                        <p><mark></span>₦<span class="price">19990</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id="Apple IPhone 15 Pro Max">
+                        <img src="power/19.jpg" width="200" height="200" >
+                        <h4>Wave Solar Hybrid Inverter</h4>
+                        <p><mark></span>₦<span class="price">337641</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="card" id=""XIAOMI Redmi Note 13 Pro>
+                        <img src="power/20.jpg" width="200" height="200" >
+                        <h4>Inverter with Charger</h4>
+                        <p><mark></span>₦<span class="price">120000</mark></p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+    
+    
+            </main>
+        </div>
+        
+        <center><a href="#"><h2>BACK TO TOP</h2></a></center>
+            
+
+
+        <script>
+
+
+
+const cards = document.querySelectorAll('.card');
+        const cart = document.getElementById('cart');
+        const totalElement = document.getElementById('total'); 
+        const selectedItems = {};
+
+        function handleCardClick(event) {
+            const card = event.currentTarget;
+            const itemId = card.id;
+            const itemName = card.querySelector('h4').textContent;
+            const itemPrice = parseFloat(card.querySelector('.price').textContent); 
+
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count++;
+            } else {
+                selectedItems[itemId] = {
+                    name: itemName,
+                    price: itemPrice,
+                    count: 1,
+                };
+            }
+
+            updateCart();
+        }
+
+        function updateCart() {
+            cart.innerHTML = '';
+            let total = 0; 
+
+            for (const itemId in selectedItems) {
+                const item = selectedItems[itemId];
+                const listItem = document.createElement('li');
+                const quantityContainer = document.createElement('div'); 
+                const quantityText = document.createElement('span'); 
+                const addButton = document.createElement('button');
+                const subtractButton = document.createElement('button');
+
+                addButton.textContent = '+';
+                subtractButton.textContent = '-';
+
+                quantityText.textContent = item.count; 
+
+                addButton.addEventListener('click', () => {
+                    addItem(itemId);
+                });
+
+                subtractButton.addEventListener('click', () => {
+                    removeItem(itemId);
+                });
+
+                const hr = document.createElement('hr');
+
+                quantityContainer.appendChild(subtractButton); 
+                quantityContainer.appendChild(quantityText); 
+                quantityContainer.appendChild(addButton); 
+                quantityContainer.appendChild(hr); 
+
+                listItem.textContent = `${item.name} - ₦${item.price * item.count}`;
+                listItem.appendChild(quantityContainer); 
+                cart.appendChild(listItem);
+
+                total += item.price * item.count; 
+            }
+
+            totalElement.textContent = `Total Amount: ₦${total.toFixed(2)}`; 
+        }
+
+        function addItem(itemId) {
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count++;
+            }
+            updateCart();
+        }
+
+        function removeItem(itemId) {
+            if (selectedItems[itemId]) {
+                selectedItems[itemId].count--;
+                if (selectedItems[itemId].count <= 0) {
+                    delete selectedItems[itemId];
+                }
+            }
+            updateCart();
+        }
+
+        cards.forEach((card) => {
+            card.addEventListener('click', handleCardClick);
+        });
+
+
+
+
+      
+
+        </script>
+    </body>
+</html>
